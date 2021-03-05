@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="105" height="25" viewBox="0 0 105 25">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="105" height="25" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="logo" clip-path="url(#clip-path)">
+    <g id="logo-2" data-name="logo" transform="translate(-99 -45)">
+      <text id="FoodSpin" transform="translate(120 45)" fill="#333" font-size="18" font-family="SegoeUI, Segoe UI"><tspan x="0" y="19">Foodspin</tspan></text>
+      <circle id="Ellipse_6" data-name="Ellipse 6" cx="8" cy="8" r="8" transform="translate(99 50)" fill="#ff922c"/>
+      <path id="Ellipse_7" data-name="Ellipse 7" d="M6-3c0-1.657-3-7.5-3-7.5S0-4.657,0-3A3,3,0,0,0,3,0,3,3,0,0,0,6-3Z" transform="translate(104 63.25)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

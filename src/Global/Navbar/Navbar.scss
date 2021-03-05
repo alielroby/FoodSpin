@@ -1,0 +1,108 @@
+//==================================//
+//=====Food_Spin Version @1.0.0=====//
+//=================================//
+
+//Start Color Vars
+$Firstly_Color_svg: #ffeede;
+$Secondly_Color_svg: #eaffe2;
+$Font-Color: #333333;
+$Hover: #acacac;
+
+//Start Main Navbar
+.Main-navbar {
+  display: flex;
+  align-items: center;
+  height: 70px;
+  position: relative;
+  z-index: 11;
+
+  //Start Logo
+  .logo {
+    display: inline-block;
+    img {
+      height: 35px;
+    }
+  }
+
+  //Strat Links
+  .links {
+    display: inline-block;
+    margin-left: 170px;
+    flex: 1;
+    nav {
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        li {
+          display: inline-block;
+          margin-right: 70px;
+          a {
+            text-decoration: none;
+            color: $Font-Color;
+            transition: color 300ms;
+            &:hover {
+              color: $Hover;
+            }
+          }
+        }
+      }
+    }
+  }
+  //Start Shop
+  .Shop {
+    display: inline-block;
+  }
+
+  //Start Menu
+  .Menu {
+    width: 30px;
+    height: 30px;
+    margin-left: 30px;
+    display: none;
+  }
+}
+
+//Start Responsive
+
+////Start Tablets
+@media only screen and (max-width: 991.98px) {
+  //Strat Navbar
+  .Main-navbar {
+    //Start Logo
+    .logo {
+      flex: 1;
+    }
+
+    //Start Links
+    .links {
+      display: none;
+    }
+
+    //Start Menu
+    .Menu {
+      display: block;
+    }
+  }
+}
+
+////Start Moblies
+@media only screen and (max-width: 575.98px) {
+  //Strat Navbar
+  .Main-navbar {
+    //Start Logo
+    .logo {
+      flex: 1;
+    }
+
+    //Start Links
+    .links {
+      display: none;
+    }
+
+    //Start Menu
+    .Menu {
+      display: block;
+    }
+  }
+}

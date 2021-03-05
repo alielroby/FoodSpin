@@ -1,0 +1,74 @@
+//==================================//
+//=====Food_Spin Version @1.0.0=====//
+//=================================//
+
+//Start Color Vars
+$Firstly_Color_svg: #ffeede;
+$Secondly_Color_svg: #eaffe2;
+$Font-Color: #333333;
+$Firstly-Color: #ff922c;
+
+//Start Layout
+.layout {
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+  //Start Svg
+  .svg {
+    width: 1177px;
+    height: 1177px;
+    position: absolute;
+    z-index: 0;
+    top: -627px;
+    right: -177px;
+    svg {
+      width: 100%;
+      height: 100%;
+      circle {
+        fill: $Firstly_Color_svg;
+        transition: all 1s;
+      }
+    }
+  }
+  .svgSecond {
+    svg {
+      circle {
+        fill: #eaffe2;
+      }
+    }
+  }
+}
+
+//Edit Container_Fluid
+.container-fluid {
+  padding: 0 5%;
+}
+
+//Edit Rows
+.row {
+  margin-top: 172px;
+  padding: 20px 0 0 0;
+}
+
+//Edit In Body
+body.MenuOpen {
+  height: 100vh;
+  overflow-y: hidden;
+}
+
+//Start Responsive
+
+////Start Moblies
+@media only screen and (max-width: 575.98px) {
+  .layout {
+    .row {
+      margin-top: 70px;
+      div:nth-child(1) {
+        order: 2;
+      }
+      div:nth-child(1) {
+        order: 1;
+      }
+    }
+  }
+}

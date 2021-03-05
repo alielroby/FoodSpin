@@ -1,0 +1,76 @@
+//==================================//
+//=====Food_Spin Version @1.0.0=====//
+//=================================//
+
+//Start Color Vars
+$Firstly_Color_svg: #ffeede;
+$Secondly_Color_svg: #eaffe2;
+$Font-Color: #333333;
+$Hover: #acacac;
+
+//Start Menu Slider
+.menu-slider {
+  width: 250px;
+  height: 100vh;
+  position: fixed;
+  right: -251px;
+  top: 0;
+  z-index: 10;
+  background-color: #ffffff57;
+  transition: all 500ms;
+  //Start Nav
+  nav {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      li {
+        display: block;
+        margin-bottom: 70px;
+        position: relative;
+        right: -200px;
+        opacity: 0;
+        &:nth-child(1) {
+          transition: all 500ms;
+        }
+        &:nth-child(2) {
+          transition: all 1000ms;
+        }
+        &:nth-child(3) {
+          transition: all 1500ms;
+        }
+        a {
+          text-decoration: none;
+          color: $Font-Color;
+          transition: color 300ms;
+          &:hover {
+            color: $Hover;
+          }
+        }
+      }
+      .li-open {
+        right: 0;
+        opacity: 1;
+      }
+    }
+  }
+}
+.menu-open {
+  right: 0;
+}
+
+//Start Responsive
+
+////Start Tablets
+@media only screen and (max-width: 991.98px) {
+  //Strat Menu Slider
+}
+
+////Start Moblies
+@media only screen and (max-width: 575.98px) {
+  //Strat Menu Slider
+}
